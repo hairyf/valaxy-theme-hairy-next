@@ -16,7 +16,7 @@ export default defineConfig<ThemeConfig>({
     nav: [
       {
         text: 'GitHub',
-        link: 'https://github.com/YunYouJun/valaxy-theme-hairy',
+        link: 'https://github.com/hairyf/valaxy-theme-hairy-next',
       },
       {
         text: 'RSS',
