@@ -1,5 +1,7 @@
 <template>
-  <StarterPostList />
+  <div>
+    <!-- TODO -->
+  </div>
 </template>
 
 <route lang="yaml">

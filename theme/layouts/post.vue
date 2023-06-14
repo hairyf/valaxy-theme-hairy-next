@@ -1,5 +1,6 @@
 <template>
   <Layout>
-    <StarterArticle />
+    <!-- TODO -->
+    <router-view />
   </Layout>
 </template>
