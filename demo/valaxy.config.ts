@@ -1,12 +1,12 @@
 import { defineConfig } from 'valaxy'
-import type { ThemeConfig } from 'valaxy-theme-starter'
+import type { ThemeConfig } from 'valaxy-theme-hairy'
 
 /**
  * User Config
  * do not use export const config to avoid defu conflict
  */
 export default defineConfig<ThemeConfig>({
-  theme: 'starter',
+  theme: 'hairy',
 
   themeConfig: {
     // colors: {
@@ -16,7 +16,7 @@ export default defineConfig<ThemeConfig>({
     nav: [
       {
         text: 'GitHub',
-        link: 'https://github.com/YunYouJun/valaxy-theme-starter',
+        link: 'https://github.com/YunYouJun/valaxy-theme-hairy',
       },
       {
         text: 'RSS',

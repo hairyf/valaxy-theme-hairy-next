@@ -1,16 +1,16 @@
 {
-  "name": "valaxy-theme-starter",
-  "version": "0.2.0",
+  "name": "valaxy-theme-hairy",
+  "version": "0.2.2",
   "packageManager": "pnpm@7.5.0",
   "author": {
-    "email": "me@yunyoujun.cn",
-    "name": "YunYouJun",
-    "url": "https://www.yunyoujun.cn"
+    "email": "wwu710632@gmail.com",
+    "name": "Hairyf",
+    "url": "https://www.hairy.blog/"
   },
-  "homepage": "https://starter.valaxy.site",
+  "homepage": "http://hairy.blog/posts/theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YunYouJun/valaxy-theme-starter"
+    "url": "https://github.com/hairyf/valaxy-theme-hairy-next"
   },
   "keywords": [
     "valaxy",

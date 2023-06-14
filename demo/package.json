@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "valaxy": "^0.14.28",
-    "valaxy-theme-starter": "workspace:*"
+    "valaxy-theme-hairy": "workspace:*"
   },
   "devDependencies": {
     "nodemon": "^2.0.22",
