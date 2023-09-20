@@ -1,4 +1,4 @@
-export namespace StarterTheme {
+export namespace HairyTheme {
   export type Config = ThemeConfig
   export type Sidebar = any
 }
@@ -13,6 +13,10 @@ export interface ThemeConfig {
    * @default 'light'
    */
   mode?: 'dark' | 'light'
+
+  home?: Home
+
+  post?: Post
 
   /**
    * colors
@@ -135,5 +139,10 @@ export interface Home {
   description: string
   images: string[]
 }
+
+export interface Post {
+  images: string[]
+}
+
 
 export type ThemeUserConfig = Partial<ThemeConfig>

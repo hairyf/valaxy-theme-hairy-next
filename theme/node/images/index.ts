@@ -1,5 +1,5 @@
-import type { HairyTheme } from 'types'
 import type { ResolvedValaxyOptions, ValaxyTheme } from 'valaxy'
+import type { HairyTheme } from '../../types'
 import defaultImages from './default.json'
 
 export function withImageConfig(options: ResolvedValaxyOptions<HairyTheme.Config>): ValaxyTheme {
