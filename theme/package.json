@@ -1,7 +1,7 @@
 {
   "name": "valaxy-theme-hairy",
   "version": "0.2.2",
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@8.10.5",
   "author": {
     "email": "wwu710632@gmail.com",
     "name": "Hairyf",
@@ -21,10 +21,10 @@
   "main": "client/index.ts",
   "types": "types/index.d.ts",
   "dependencies": {
-    "@iconify-json/ant-design": "^1.1.6",
-    "@iconify-json/simple-icons": "^1.1.61"
+    "@iconify-json/ant-design": "^1.1.10",
+    "@iconify-json/simple-icons": "^1.1.79"
   },
   "devDependencies": {
-    "valaxy": "^0.14.45"
+    "valaxy": "^0.15.14"
   }
 }

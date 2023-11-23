@@ -9,9 +9,6 @@ export default defineConfig<ThemeConfig>({
   theme: 'hairy',
 
   themeConfig: {
-    // colors: {
-    //   primary: 'red',
-    // },
 
     nav: [
       {
