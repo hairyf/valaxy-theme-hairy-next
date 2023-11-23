@@ -1,11 +1,36 @@
 .link {
-  color: var(--st-c-brand);
+  color: var(--va-c-brand);
 }
 
 html {
-  color: var(--st-c-text);
+  color: var(--va-c-text);
 }
 
 .st-text {
-  color: var(--st-c-text);
+  color: var(--va-c-text);
+}
+
+body {
+  font-family: var(--hy-font-family-seto);
+  @apply transition-colors duration-200;
+  color: var(--va-c-text);
+}
+
+@media (min-width: 1200px) {
+  .breakpoint {
+    width: 72.5rem
+  }
+}
+
+@media (max-width: 1200px) {
+  .breakpoint {
+    padding-left: .5rem;
+    padding-right: .5rem
+  }
+}
+
+@media (min-width: 1600px) {
+  .breakpoint {
+    width: 75vw
+  }
 }

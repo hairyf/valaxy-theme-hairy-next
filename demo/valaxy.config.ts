@@ -9,7 +9,6 @@ export default defineConfig<ThemeConfig>({
   theme: 'hairy',
 
   themeConfig: {
-
     nav: [
       {
         text: 'GitHub',

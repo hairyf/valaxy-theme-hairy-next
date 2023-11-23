@@ -36,7 +36,7 @@ export interface ThemeConfig {
   /**
    * navbar
    */
-  nav?: Nav[]
+  nav?: NavItem[]
 
   /**
    * meting
@@ -44,7 +44,7 @@ export interface ThemeConfig {
   meting?: Partial<Meting>
 }
 
-export interface Nav {
+export interface NavItem {
   text: string
   link: string
   icon?: string
