@@ -32,7 +32,7 @@ export const defaultThemeConfig: ThemeConfig = {
 
 // write a vite plugin
 // https://vitejs.dev/guide/api-plugin.html
-export function withThemeConfig(options: ResolvedValaxyOptions<ThemeConfig>): ValaxyTheme {
+export function withThemeConfig(options: ResolvedValaxyOptions<ThemeConfig>): ValaxyTheme<ThemeConfig> {
   const themeConfig = options.config.themeConfig || {}
 
   return {

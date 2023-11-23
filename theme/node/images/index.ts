@@ -1,8 +1,8 @@
 import type { ResolvedValaxyOptions, ValaxyTheme } from 'valaxy'
-import type { HairyTheme } from '../../types'
+import type { HairyTheme, ThemeConfig } from '../../types'
 import defaultImages from './default.json'
 
-export function withImageConfig(options: ResolvedValaxyOptions<HairyTheme.Config>): ValaxyTheme {
+export function withImageConfig(options: ResolvedValaxyOptions<HairyTheme.Config>): ValaxyTheme<ThemeConfig> {
   const prefix = '@hairy'
   const postConfig = options.config.themeConfig?.post
   const homeConfig = options.config.themeConfig?.home

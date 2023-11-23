@@ -11,20 +11,20 @@ export default defineConfig<ThemeConfig>({
   themeConfig: {
     nav: [
       {
-        text: 'GitHub',
-        link: 'https://github.com/hairyf/valaxy-theme-hairy-next',
+        text: 'Home',
+        link: '/',
       },
       {
-        text: 'RSS',
-        link: '/atom.xml',
+        text: 'About',
+        link: '/about',
       },
       {
-        text: 'Discord',
-        link: 'https://discord.gg/sGe4U4p4CK',
+        text: 'Posts',
+        link: '/archives/',
       },
       {
-        text: 'Valaxy →',
-        link: 'https://github.com/YunYouJun/valaxy',
+        text: 'Github',
+        link: 'https://github.com/TuiMao233/valaxy-theme-hairy',
       },
     ],
 
