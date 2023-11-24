@@ -43,7 +43,7 @@ function hrefToUrl() {
       </div>
       <div class="flex-center order-1">
         <HairyNavbarToggleDark />
-      <!-- TODO: <HairyNavSearch /> -->
+        <HairySearchButton />
       </div>
     </div>
 

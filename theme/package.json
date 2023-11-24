@@ -28,6 +28,7 @@
     "@iconify-json/ant-design": "^1.1.10",
     "@iconify-json/simple-icons": "^1.1.79",
     "valaxy": "^0.15.14",
+    "valaxy-addon-algolia": "^0.0.3",
     "valaxy-addon-meting": "^0.0.1"
   }
 }

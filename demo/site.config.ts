@@ -8,6 +8,10 @@ export default defineSiteConfig({
     avatar: 'https://pic.imgdb.cn/item/62fe02d616f2c2beb14bc2f3.jpg',
     name: '毛先生',
   },
+  search: {
+    enable: true,
+    type: 'algolia',
+  },
   description: 'Valaxy Theme Hairy Preview.',
   social: [
     {
@@ -60,7 +64,5 @@ export default defineSiteConfig({
     },
   ],
 
-  comment: {
-    enable: false,
-  },
+  comment: { enable: false },
 })
