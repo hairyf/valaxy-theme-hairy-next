@@ -8,6 +8,11 @@ body {
   color: var(--va-c-text);
 }
 
+a {
+  color: var(--hy-c-primary);
+  font-weight: 500;
+}
+
 @media (min-width: 1200px) {
   .breakpoint {
     width: 72.5rem
