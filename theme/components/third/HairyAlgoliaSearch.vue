@@ -12,6 +12,6 @@ whenever(loaded, dispatchEvent)
 </script>
 
 <template>
-  <AlgoliaSearchBox v-if="loaded" />
+  <AlgoliaSearchBox v-if="loaded" class="VPNavBarSearch" />
   <HairySearchBtnDisplay v-else @click="load()" />
 </template>

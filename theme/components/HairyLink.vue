@@ -6,9 +6,9 @@ defineProps<{
 
 <template>
   <a
-    href="" class="cursor-pointer transition-all" :class="[
+    class="cursor-pointer transition-all" :class="[
       type === 'white'
-        ? 'text-white hover:text-primary'
+        ? 'text-black hover:text-primary dark:text-white'
         : 'text:text-primary-light hover:text-primary-dark',
     ]"
   >

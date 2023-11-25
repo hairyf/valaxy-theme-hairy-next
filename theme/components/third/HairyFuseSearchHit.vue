@@ -50,5 +50,3 @@ whenever(useElementHover(itemRef), () => emit('hover'))
     </a>
   </li>
 </template>
-
-<style lang="scss" scoped></style>

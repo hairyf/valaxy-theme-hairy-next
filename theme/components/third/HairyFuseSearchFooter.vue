@@ -4,7 +4,7 @@
 <template>
   <footer class="DocSearch-Footer">
     <div class="DocSearch-Logo">
-      <a class="flex items-center text-white" target="_blank" href="https://www.fusejs.io/">
+      <a class="flex items-center text-black dark:text-white" target="_blank" href="https://www.fusejs.io/">
         <span mr-2 class="DocSearch-Label">Search by</span>
         <img mr-1 w-6 h-6 src="https://www.fusejs.io/assets/img/logo.png">
         <span>Fuse.js</span>

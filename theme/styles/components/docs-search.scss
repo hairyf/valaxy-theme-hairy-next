@@ -47,7 +47,7 @@
   width: 32px;
   height: 55px;
   background: transparent;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
 
 .DocSearch-Button:hover {
@@ -75,8 +75,15 @@
   }
 
   .DocSearch-Button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
     border-color: var(--hy-c-brand);
-    /* background: var(--hy-c-bg-alt); */
+  }
+
+  .dark {
+    .DocSearch-Button:hover {
+      background-color: transparent;
+      border-color: var(--hy-c-brand);
+    }
   }
 }
 

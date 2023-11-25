@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia'
-import { useGlobalStore } from '../store'
+import { useGlobalStore } from '../../store'
 
 const { showDrawer } = storeToRefs(useGlobalStore())
 </script>
