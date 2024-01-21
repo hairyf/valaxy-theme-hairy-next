@@ -9,7 +9,7 @@ export namespace HairyTheme {
 export interface ThemeConfig {
   /**
    * default theme mode
-   * 
+   *
    * @default 'light'
    */
   mode?: 'dark' | 'light'
@@ -77,19 +77,19 @@ export interface Meting {
 }
 
 export interface Layout {
-  post: 
-  | 'text'
-  | 'markdown'
-  | 'image'
-  | 'image:slice'
-  | 'image:slice:reverse'
+  post:
+    | 'text'
+    | 'markdown'
+    | 'image'
+    | 'image:slice'
+    | 'image:slice:reverse'
   categories: 'timeline' | 'post'
 }
 
 export interface Footer {
   /**
- * 建站于
- */
+   * 建站于
+   */
   since: number
 
   /**
@@ -143,6 +143,5 @@ export interface Home {
 export interface Post {
   images: string[]
 }
-
 
 export type ThemeUserConfig = Partial<ThemeConfig>

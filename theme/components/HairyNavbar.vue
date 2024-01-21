@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia'
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useElementSize, useScroll, whenever } from '@vueuse/core'
 import { useSiteConfig } from 'valaxy'
 import { useGlobalStore } from '../store'
@@ -12,7 +12,8 @@ const headerSize = useElementSize(headerRef)
 const headerHeight = computed(() => headerSize.height.value)
 
 // get document scroll
-const scroll = useScroll(document)
+const documentRef = ref()
+const scroll = useScroll(documentRef)
 const dire = ref<'top' | 'bottom'>('top')
 
 whenever(() => scroll.directions.top, () => dire.value = 'top')
@@ -20,10 +21,13 @@ whenever(() => scroll.directions.bottom, () => dire.value = 'bottom')
 
 const show = computed(() => {
   return scroll.y.value < (headerHeight.value / 2)
-  || dire.value === 'top'
+    || dire.value === 'top'
 })
 
 const config = useSiteConfig()
+onMounted(() => {
+  documentRef.value = document
+})
 </script>
 
 <template>
