@@ -66,7 +66,6 @@ export function withThemeConfig(options: ResolvedValaxyOptions<ThemeConfig>): Va
 /**
  * generateSafelist by config
  * @param themeConfig
- * @returns
  */
 export function generateSafelist(themeConfig: ThemeConfig) {
   const safelist: string[] = []

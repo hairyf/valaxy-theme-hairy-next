@@ -1,6 +1,8 @@
 import { defineConfig } from 'valaxy'
 import type { ThemeConfig } from 'valaxy-theme-hairy'
 import { addonAlgolia } from 'valaxy-addon-algolia'
+import { addonWaline } from 'valaxy-addon-waline'
+import { addonMeting } from 'valaxy-addon-meting'
 
 /**
  * User Config
@@ -30,6 +32,11 @@ export default defineConfig<ThemeConfig>({
     ],
     footer: {
       since: 2016,
+      beian: {
+        enable: false,
+        icp: '苏ICP备xxxxxx号',
+      },
+      powered: true,
     },
   },
 
@@ -38,6 +45,23 @@ export default defineConfig<ThemeConfig>({
       appId: '0B89DLR0Q9',
       apiKey: '756e8e048364fae43536c1d0000734a6',
       indexName: 'hairy.blog',
+    }),
+    addonWaline({
+      comment: true,
+      serverURL: 'https://valaxy-blog-waline.vercel.app/',
+      emoji: [
+        '//unpkg.com/@waline/emojis@1.0.1/weibo',
+        '//unpkg.com/@waline/emojis@1.0.1/bilibili',
+      ],
+    }),
+    addonMeting({
+      global: true,
+      props: {
+        id: '5312894314',
+        type: 'playlist',
+        autoplay: true,
+        theme: 'var(--hy-c-primary)',
+      },
     }),
   ],
 })

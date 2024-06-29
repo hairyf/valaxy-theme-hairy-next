@@ -1,7 +1,7 @@
 import { defineConfig } from 'unocss'
 
 const safelist = [
-  'i-ri:home-2-fill',
+  'i-ri-home-2-fill',
   'i-ri-list-check-2',
   'i-ri-flow-chart',
   'i-ri-user-line',
@@ -12,6 +12,7 @@ const safelist = [
   'i-fluent-markdown-20-filled',
   'i-fluent-code-text-16-filled',
 ]
+
 export default defineConfig({
   theme: {
     breakpoints: {

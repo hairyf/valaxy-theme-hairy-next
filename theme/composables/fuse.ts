@@ -37,7 +37,6 @@ export function useFuseParsed(input: MaybeRefOrGetter<string>) {
 
   const { fuse, results: _results } = useFuse(input, data, fuseOptions)
   const results = computed(() => _results.value.map((v) => {
-    console.log(removeTags(v.item.excerpt || ''))
     return {
       ...v,
       item: {

@@ -25,9 +25,7 @@ const show = computed(() => {
 })
 
 const config = useSiteConfig()
-onMounted(() => {
-  documentRef.value = document
-})
+onMounted(() => documentRef.value = document)
 </script>
 
 <template>
@@ -45,7 +43,7 @@ onMounted(() => {
       </div>
       <div class="flex-center order-1">
         <HairyNavbarToggleDark />
-        <HairySearchButton />
+        <HairySearch />
       </div>
     </div>
 

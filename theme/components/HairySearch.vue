@@ -1,3 +1,18 @@
+<script lang="ts" setup>
+import { useSiteConfig } from 'valaxy'
+import { computed } from 'vue'
+
+const siteConfig = useSiteConfig()
+const isAlgolia = computed(() => siteConfig.value.search.type === 'algolia')
+const isFuse = computed(() => siteConfig.value.search.type === 'fuse')
+</script>
+
+<template>
+  <HairyAlgoliaSearch v-if="isAlgolia" />
+  <HairyFuseSearch v-if="isFuse" />
+</template>
+
+<style lang="scss">
 .VPNavBarSearch {
   display: flex;
   align-items: center;
@@ -60,7 +75,7 @@
 }
 
 .DocSearch-Button:focus:not(:focus-visible) {
-  outline: none !important;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -171,10 +186,6 @@
   padding-right: 6px;
 }
 
-.dark .DocSearch-Footer {
-  border-top: 1px solid var(--hy-c-divider);
-}
-
 .DocSearch-Form {
   border: 1px solid var(--hy-c-brand);
   background-color: var(--hy-c-white);
@@ -183,3 +194,8 @@
 .dark .DocSearch-Form {
   background-color: var(--hy-c-bg-mute);
 }
+
+.dark .DocSearch-Footer {
+  border-top: 1px solid var(--hy-c-divider);
+}
+</style>

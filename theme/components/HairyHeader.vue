@@ -14,7 +14,7 @@ const { headerRef } = storeToRefs(useGlobalStore())
 <template>
   <header ref="headerRef" class="relative animate__animated animate__fadeIn">
     <div class="h-30vh lt-md:h-60vh min-h-80 flex-center">
-      <HairyHeadHero v-if="title" class="relative z-2" :title="title" v-bind="$props">
+      <HairyHeadHero v-if="title || headline || description" class="relative z-2" :title="title" v-bind="$props">
         <template #description>
           <slot name="description" />
         </template>

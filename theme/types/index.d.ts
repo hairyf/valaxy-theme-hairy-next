@@ -1,6 +1,8 @@
+/* eslint-disable ts/no-use-before-define */
 export namespace HairyTheme {
   export type Config = ThemeConfig
   export type Sidebar = any
+  export type { Layout }
 }
 
 /**
@@ -15,6 +17,8 @@ export interface ThemeConfig {
   mode?: 'dark' | 'light'
 
   home?: Home
+
+  user?: User
 
   post?: Post
 
@@ -142,6 +146,11 @@ export interface Home {
 
 export interface Post {
   images: string[]
+}
+
+export interface User {
+  name?: string
+  description?: string
 }
 
 export type ThemeUserConfig = Partial<ThemeConfig>

@@ -63,6 +63,8 @@ export default defineSiteConfig({
       color: 'var(--va-c-text)',
     },
   ],
-
+  statistics: {
+    enable: true,
+  },
   comment: { enable: false },
 })
