@@ -1,6 +1,6 @@
 {
   "name": "valaxy-theme-hairy",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "packageManager": "pnpm@8.10.5",
   "author": {
     "email": "wwu710632@gmail.com",
@@ -21,6 +21,7 @@
   "main": "client/index.ts",
   "types": "types/index.d.ts",
   "dependencies": {
+    "element-plus": "^2.7.6",
     "pinia": "^2.1.7",
     "swiper": "^11.0.5"
   },

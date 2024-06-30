@@ -33,6 +33,6 @@ declare module 'vue-router/auto-routes' {
     '/posts/i18n': RouteRecordInfo<'/posts/i18n', '/posts/i18n', Record<never, never>, Record<never, never>>,
     '/posts/test': RouteRecordInfo<'/posts/test', '/posts/test', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
-    '/tags/[tag]': RouteRecordInfo<'/tags/[tag]', '/tags/:tag', { tag: ParamValue<true> }, { tag: ParamValue<false> }>,
+    '/tags/[tag]/': RouteRecordInfo<'/tags/[tag]/', '/tags/:tag', { tag: ParamValue<true> }, { tag: ParamValue<false> }>,
   }
 }

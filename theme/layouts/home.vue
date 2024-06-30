@@ -26,7 +26,7 @@ const hello = riposte(
       :description="`${hello}, how are you doing?`"
     />
     <HairyBody>
-      <HairyPost />
+      <router-view />
     </HairyBody>
     <HairyFooter />
   </div>

@@ -50,6 +50,8 @@
   --hy-c-indigo-lighter: #c9def1;
   --hy-c-indigo-dark: #1d2f3f;
   --hy-c-indigo-darker: #14212e;
+
+  --va-c-bg: #fafafa;
 }
 
 .dark {
@@ -61,7 +63,9 @@
   --hy-c-primary-dimm-1: rgba(143, 230, 213, 0.5);
   --hy-c-primary-dimm-2: rgba(143, 230, 213, 0.25);
   --hy-c-primary-dimm-3: rgba(143, 230, 213, 0.05);
+  --va-c-bg: #1b1b1f;
 }
+
 
 :root {
   --hy-c-waves-dimm: var(--va-c-bg);

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 defineProps<{
   type: 'white' | 'normal'
+  bordered?: boolean
 }>()
 </script>
 
@@ -10,6 +11,7 @@ defineProps<{
       type === 'white'
         ? 'text-black hover:text-primary dark:text-white'
         : 'text:text-primary-light hover:text-primary-dark',
+      bordered && 'border-b border-dashed hover:border-primary',
     ]"
   >
     <slot />

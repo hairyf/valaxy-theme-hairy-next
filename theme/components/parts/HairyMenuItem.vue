@@ -30,14 +30,14 @@ const isActive = computed(() => {
 </script>
 
 <template>
-  <div class="px-2.5 HairyMenuItem" :class="[isPointer ? 'cursor-pointer' : 'select-none', isActive && 'text-primary active']">
-    <div class="flex items-center hover:text-primary" @click="toLink">
+  <button class="px-2.5 HairyMenuItem" :class="[isPointer ? 'cursor-pointer' : 'select-none', isActive && 'text-primary active']">
+    <div class="flex items-center hover:text-primary duration-300" @click="toLink">
       <div v-if="item.icon" class="mr-1 icon" :class="item.icon" />
       <div class="question">
         {{ item.text }}
       </div>
     </div>
-  </div>
+  </button>
 </template>
 
 <style lang="scss" scoped></style>

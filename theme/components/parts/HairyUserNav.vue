@@ -41,6 +41,9 @@ const total = computed(() => {
 
 <style lang="scss">
   .HairyUserMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     .HairyMenuItem {
       padding: 2px;
       width: 100%;
@@ -48,18 +51,34 @@ const total = computed(() => {
       > div {
         justify-content: center;
       }
+      border-radius: 10px;
+      transition: all 0.3s;
+      background-color: transparent;
+      user-select: none;
     }
 
     .HairyMenuItem:hover,
     .HairyMenuItem.active {
-      border-top: 1px solid var(--hy-c-primary);
-      border-bottom: 1px solid var(--hy-c-primary);
+      background-color: #f4f4f5;
     }
+    .HairyMenuItem:active {
+      background-color: #efefef;
+    }
+
     .HairyMenuItem.active + .HairyMenuItem {
       border-top-color: transparent;
     }
     .HairyMenuItem:hover + .HairyMenuItem {
       border-top-color: transparent;
+    }
+  }
+  .dark .HairyUserMenu {
+    .HairyMenuItem:hover,
+    .HairyMenuItem.active {
+      background-color: #f4f4f50a;
+    }
+    .HairyMenuItem:active {
+      background-color: #f4f4f521;
     }
   }
 </style>

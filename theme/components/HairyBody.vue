@@ -4,7 +4,7 @@
 <template>
   <div class="min-h-49vh relative">
     <div class="mx-auto container flex z-1 relative">
-      <div class="relative flex-1 pt-2 ">
+      <div class="relative flex-1 pt-2 main">
         <slot />
         <HairyComment />
       </div>
@@ -25,6 +25,11 @@
   @apply absolute top-0 max-h-150vh top-5 bottom-0 w-full transition-opacity;
   opacity: 0;
 }
+.main {
+  background: linear-gradient(to bottom,#fafafa 0,#fff 20%) no-repeat top;
+  padding: 1.25rem;
+  border-radius: 10px
+}
 
 .dark {
   .HairyBodyBackground {
@@ -38,6 +43,9 @@
     background-repeat: no-repeat;
     filter: blur(0px);
     background-size: cover;
+  }
+  .main {
+    background: transparent;
   }
 }
 </style>

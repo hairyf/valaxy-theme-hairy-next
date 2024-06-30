@@ -1,10 +1,7 @@
-<script lang="ts" setup>
-</script>
-
 <template>
   <div class="min-h-80vh">
     <HairyNavbar />
-    <HairyHeader />
+    <HairyHeader :title="`包含标签'${$route.params.tag}'的标签`" />
     <HairyBody>
       <router-view />
     </HairyBody>

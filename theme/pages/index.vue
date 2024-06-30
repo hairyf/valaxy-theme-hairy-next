@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <!-- TODO -->
-  </div>
+  <HairyPosts pagination />
 </template>
 
 <route lang="yaml">

@@ -4,7 +4,7 @@
 <template>
   <div class="min-h-80vh">
     <HairyNavbar />
-    <HairyHeader />
+    <HairyHeader title="分类" />
     <HairyBody>
       <router-view />
     </HairyBody>

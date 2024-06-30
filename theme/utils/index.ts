@@ -24,3 +24,14 @@ export function removeTags(content = '') {
     .replace(/<\/?[^>]*>/g, '')
     .replace(/[|]*\n/, '')
 }
+
+export function getArchiveLink(year?: string, month?: string) {
+  if (!year)
+    return '/archives/'
+  if (!month)
+    return `/archives/${year}`
+  if (month)
+    return `/archives/${year}/${month}`
+
+  return ''
+}
