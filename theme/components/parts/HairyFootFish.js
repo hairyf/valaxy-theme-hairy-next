@@ -1,7 +1,4 @@
 /* eslint-disable eqeqeq */
-/* eslint-disable no-var */
-/* eslint-disable vars-on-top */
-/* eslint-disable @typescript-eslint/no-use-before-define */
 
 class RENDERER {
   ENABLE = false
@@ -184,10 +181,12 @@ class RENDERER {
   }
 }
 
-var SURFACE_POINT = function (renderer, x) {
-  this.renderer = renderer
-  this.x = x
-  this.init()
+class SURFACE_POINT {
+  constructor(renderer, x) {
+    this.renderer = renderer
+    this.x = x
+    this.init()
+  }
 }
 
 SURFACE_POINT.prototype = {
@@ -235,9 +234,11 @@ SURFACE_POINT.prototype = {
   },
 }
 
-var FISH = function (renderer) {
-  this.renderer = renderer
-  this.init()
+class FISH {
+  constructor(renderer) {
+    this.renderer = renderer
+    this.init()
+  }
 }
 
 FISH.prototype = {

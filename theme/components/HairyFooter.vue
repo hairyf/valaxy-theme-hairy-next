@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { capitalize, computed } from 'vue'
-import { useConfig, useFrontmatter, useSiteConfig, useThemeConfig } from 'valaxy'
+import { useConfig, useSiteConfig, useThemeConfig } from 'valaxy'
 import { useI18n } from 'vue-i18n'
 import pkg from 'valaxy/package.json'
 import type { HairyTheme } from 'valaxy-theme-hairy'
@@ -20,9 +20,7 @@ const isThisYear = computed(() => {
 const poweredHtml = computed(() => t('footer.powered', [`<a href="${pkg.repository}" target="_blank" rel="noopener">Valaxy</a> v${pkg.version}`]))
 const footerIcon = computed(() => themeConfig.value.footer?.icon)
 
-const frontmatter = useFrontmatter()
-
-console.log(frontmatter.value)
+// const frontmatter = useFrontmatter()
 </script>
 
 <template>
