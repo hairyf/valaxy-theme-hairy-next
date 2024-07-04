@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia'
-import { useFrontmatter } from 'valaxy'
 import { useGlobalStore } from '../store'
 
 defineProps<{
