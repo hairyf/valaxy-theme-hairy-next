@@ -55,12 +55,12 @@ function displayCategory(key: string) {
         class="relative flex items-center flex-col cursor-pointer hover:text-primary transition-color"
         @click="displayCategory(key)"
       >
-        <div class="i-ri-folder-open-line text-22 lt-sm:text-15" />
+        <div class="i-material-symbols-folder-open-rounded text-22 lt-sm:text-15" />
         <div class="text-center leading-normal">
           {{ i18n.t(key) }}
         </div>
-        <div class="badge">
-          {{ item.total }}
+        <div class="badge text-12px right-20px top-12px">
+          {{ item.total }} dir
         </div>
       </div>
     </template>
@@ -80,16 +80,12 @@ function displayCategory(key: string) {
 <style lang="scss" scoped>
 .badge {
   position: absolute;
-  right: 0.8rem;
-  top: 0.5rem;
-  padding-left: 6px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 6px;
-
+  // padding-left: 6px;
+  // padding-top: 2px;
+  // padding-bottom: 2px;
+  // padding-right: 6px;
   line-height: normal;
   border-radius: 50%;
-  background-color: #f56c6c;
   color: #fff;
 }
 

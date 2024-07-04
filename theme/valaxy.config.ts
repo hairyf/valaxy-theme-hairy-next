@@ -9,6 +9,7 @@ export default defineTheme<ThemeConfig>((options) => {
     addons: [
       addonAlgolia(),
     ],
+    themeConfig: { outline: 2 },
   }
 
   config = mergeValaxyConfig(config, withImageConfig(options))

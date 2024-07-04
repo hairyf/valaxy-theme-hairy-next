@@ -10,8 +10,8 @@ const props = defineProps<{
 
 const post = useFrontmatter()
 
-const headline = computed(() => post.value.headline || props.headline)
-const title = computed(() => post.value.title || props.title)
+const headline = computed(() => props.headline || post.value.headline)
+const title = computed(() => props.title || post.value.title)
 </script>
 
 <template>

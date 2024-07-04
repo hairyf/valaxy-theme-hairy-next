@@ -40,6 +40,10 @@ export default defineConfig<ThemeConfig>({
     },
   },
 
+  markdown: {
+    theme: 'material-theme-ocean',
+  },
+
   addons: [
     addonAlgolia({
       appId: '0B89DLR0Q9',

@@ -48,6 +48,12 @@ importers:
 
   theme:
     dependencies:
+      '@hairy/utils':
+        specifier: ^0.6.8
+        version: 0.6.8
+      '@overlastic/vue':
+        specifier: ^0.4.7
+        version: 0.4.7(typescript@5.3.3)
       element-plus:
         specifier: ^2.7.6
         version: 2.7.6(vue@3.4.31)
@@ -64,6 +70,9 @@ importers:
       '@iconify-json/fluent':
         specifier: ^1.1.18
         version: 1.1.57
+      '@iconify-json/material-symbols':
+        specifier: ^1.1.83
+        version: 1.1.83
       '@iconify-json/simple-icons':
         specifier: ^1.1.19
         version: 1.1.79
@@ -1222,6 +1231,10 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /@extra-array/arange@1.1.7:
+    resolution: {integrity: sha512-AOZQCNohh2fPvC7o/5YhrSTwwrJwXiHBSVDY+CZQ2j8P5TsX+fkUYP9FVdvvfoRcINFXhm5Y18bUVBphFNxUVA==}
+    dev: false
+
   /@floating-ui/core@1.6.4:
     resolution: {integrity: sha512-a4IowK4QkXl4SCWTGUR0INAfEOX3wtsYw3rKK5InQEHMGObkR8Xk44qYQD9P4r6HHw0iIfK6GUKECmY8sTkqRA==}
     dependencies:
@@ -1237,6 +1250,15 @@ packages:
 
   /@floating-ui/utils@0.2.4:
     resolution: {integrity: sha512-dWO2pw8hhi+WrXq1YJy2yCuWoL20PddgGaqTgVe4cOS9Q6qklXCiA1tJEqX6BEwRNSCP84/afac9hd4MS+zEUA==}
+    dev: false
+
+  /@hairy/utils@0.6.8:
+    resolution: {integrity: sha512-sSBevcHTJ1/7UEk73DdkeK1h9+Wb5V7IrUS+FZC5qVOIOhstyzKVvCjZwyNcHoZKv6P/Mh0trFPn0z44eLdlfg==}
+    dependencies:
+      '@extra-array/arange': 1.1.7
+      delay: 5.0.0
+      lodash: 4.17.21
+      p-pipe: 4.0.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -1272,6 +1294,12 @@ packages:
 
   /@iconify-json/fluent@1.1.57:
     resolution: {integrity: sha512-pDDVsDubUXPDj9HV6apJ/vZJZ/PFWd+Z3cdesPB9eVkK5CIbo1LD3ZCR1i3pQiPYODCswykypRREIuN18LNqtw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/material-symbols@1.1.83:
+    resolution: {integrity: sha512-CBO1pPp6YRzqkM8XwRmWY9Vi19wYpkl7lS8XhLDUssDnjQaaYbmE4O1SWCBr1AVn1x48qmCWXLk4HKWLvvQpvA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1474,6 +1502,23 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+
+  /@overlastic/core@0.4.3:
+    resolution: {integrity: sha512-us4rb+ji8n02ZROoaXQgIKb/ZdD/NsVZCluV6XM8GqICYoEIVHLDmoyQOjWHyn6XDmwnskB152RuvgPDBp7JqQ==}
+    dev: false
+
+  /@overlastic/vue@0.4.7(typescript@5.3.3):
+    resolution: {integrity: sha512-0fGxK2kG5BY7ZH3BUYZLsH5eXRQI476w9NEYz3vUvlvk2tKh3hDEf4cE5/4oAW5AKhhqlv6MNdhhVmzVPxI5tA==}
+    dependencies:
+      '@overlastic/core': 0.4.3
+      '@vueuse/core': 10.11.0(vue@3.4.31)
+      pascal-case: 4.0.0
+      vue: 3.4.31(typescript@5.3.3)
+      vue-demi: 0.14.8(vue@3.4.31)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+    dev: false
 
   /@polka/url@1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
@@ -3461,6 +3506,11 @@ packages:
     resolution: {integrity: sha512-8nvh+XBe96aCESrGOqMp/84b13H9cdKbG5P2ejQCh4d4sK9RL4371qou9drQjMhvnPmhWl5hnmqbEE0fXr9Xnw==}
     dependencies:
       robust-predicates: 3.0.2
+
+  /delay@5.0.0:
+    resolution: {integrity: sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==}
+    engines: {node: '>=10'}
+    dev: false
 
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -5536,6 +5586,11 @@ packages:
     dependencies:
       lower-case: 1.1.4
 
+  /no-case@4.0.0:
+    resolution: {integrity: sha512-WmS3EUGw+vXHlTgiUPi3NzbZNwH6+uGX0QLGgqG+aFSJ5rkX/Ee0nuwHBJfZTfQwwR8lGO819NEIwQ7CGhkdEQ==}
+    deprecated: Use `change-case`
+    dev: false
+
   /node-fetch-native@1.6.1:
     resolution: {integrity: sha512-bW9T/uJDPAJB2YNYEpWzE54U5O3MQidXsOyTfnbKYtTtFexRvGzb1waphBN4ZwP6EcIvYYEOwW0b72BpAqydTw==}
     dev: true
@@ -5732,6 +5787,11 @@ packages:
     dependencies:
       p-limit: 3.1.0
 
+  /p-pipe@4.0.0:
+    resolution: {integrity: sha512-HkPfFklpZQPUKBFXzKFB6ihLriIHxnmuQdK9WmLDwe4hf2PdhhfWT/FJa+pc3bA1ywvKXtedxIRmd4Y7BTXE4w==}
+    engines: {node: '>=12'}
+    dev: false
+
   /p-try@2.2.0:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
@@ -5784,6 +5844,13 @@ packages:
     dependencies:
       leac: 0.6.0
       peberminta: 0.9.0
+
+  /pascal-case@4.0.0:
+    resolution: {integrity: sha512-DPrSBfN1ivlJ5WwTdcBfCfmOHZXjaeW+b8DMHXcUWiR8wmO92T6N8elBsJj/v3g+INObw8Zx/q6eFAjA1w071Q==}
+    deprecated: Use `change-case`
+    dependencies:
+      no-case: 4.0.0
+    dev: false
 
   /pascalcase@2.0.0:
     resolution: {integrity: sha512-DHpENy5Qm/FaX+x3iBLoMLG/XHNCTgL+yErm1TwuVaj6u4fiOSkYkf60vGtITk7hrKHOO4uCl9vRrD4hqjNKjg==}

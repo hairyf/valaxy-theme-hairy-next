@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import type { PostFrontMatter } from 'valaxy'
 import { useFrontmatter } from 'valaxy'
 import { computed, inject, nextTick, ref } from 'vue'
 import { useRouter } from 'vue-router'
@@ -10,9 +11,10 @@ const paths = computed(() => toArray(frontmatter.value.categories).filter(Boolea
 const category = useCategory(paths)
 
 const posts = computed(() => {
-  const result = category.value.posts || []
-  return result.sort((a: any, b: any) => (a.date || 1) > (b.date || 1) ? 1 : -1)
+  const result = [...(category.value.children?.values() || [])] as PostFrontMatter[]
+  return result.sort((a, b) => (a.date || 1) > (b.date || 1) ? 1 : -1)
 })
+
 const router = useRouter()
 
 const active = inject('HairyUserTab:active', ref(''))

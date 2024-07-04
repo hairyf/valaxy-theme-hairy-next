@@ -46,6 +46,13 @@ export interface ThemeConfig {
    * meting
    */
   meting?: Partial<Meting>
+
+  /**
+   * Custom header levels of outline in the aside component.
+   *
+   * @default 2
+   */
+  outline?: number | [number, number] | 'deep' | false
 }
 
 export interface NavItem {

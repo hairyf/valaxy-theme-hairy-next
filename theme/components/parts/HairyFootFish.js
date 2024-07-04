@@ -1,3 +1,4 @@
+/* eslint-disable ts/no-use-before-define */
 /* eslint-disable eqeqeq */
 
 class RENDERER {
@@ -181,12 +182,10 @@ class RENDERER {
   }
 }
 
-class SURFACE_POINT {
-  constructor(renderer, x) {
-    this.renderer = renderer
-    this.x = x
-    this.init()
-  }
+const SURFACE_POINT = function (renderer, x) {
+  this.renderer = renderer
+  this.x = x
+  this.init()
 }
 
 SURFACE_POINT.prototype = {
@@ -234,11 +233,9 @@ SURFACE_POINT.prototype = {
   },
 }
 
-class FISH {
-  constructor(renderer) {
-    this.renderer = renderer
-    this.init()
-  }
+const FISH = function (renderer) {
+  this.renderer = renderer
+  this.init()
 }
 
 FISH.prototype = {

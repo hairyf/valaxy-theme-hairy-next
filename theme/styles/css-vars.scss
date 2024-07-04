@@ -154,3 +154,19 @@
 
   --hy-c-text-code: var(--hy-c-indigo-lighter);
 }
+
+:root {
+  --va-c-primary-light: var(--hy-c-primary-light);
+  --va-c-primary-lighter: var(--hy-c-primary-lighter);
+  --va-c-primary-dark: var(--hy-c-primary-dark);
+  --va-c-primary: var(--hy-c-primary);
+}
+
+/**
+ * element-plus Theme
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --el-color-primary: var(--hy-c-primary) !important;
+  --el-text-color-primary: var(--hy-c-text-2) !important;
+}
