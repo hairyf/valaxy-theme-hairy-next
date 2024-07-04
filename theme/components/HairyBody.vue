@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="min-h-49vh relative">
+  <div class="min-h-49vh relative z-5">
     <div class="mx-auto container flex z-1 relative">
       <div class="relative flex-1 pt-2 main">
         <slot />
@@ -15,6 +15,7 @@
         </div>
       </div>
     </div>
+
     <div class="HairyBodyBackground" />
   </div>
 </template>

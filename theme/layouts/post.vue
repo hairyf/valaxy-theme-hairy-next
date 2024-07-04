@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { dayjs } from 'element-plus'
 import { useFrontmatter } from 'valaxy'
-import { useRoute, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 import { ElTag } from 'element-plus/es/components/tag/index'
 import 'element-plus/es/components/tag/style/index'
 

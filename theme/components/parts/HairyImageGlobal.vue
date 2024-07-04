@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { computed, provide, useCssVars, useSlots } from 'vue'
+import { provide, useCssVars } from 'vue'
 import { renderOverlay } from '@overlastic/vue'
 import type { ImageViewerProps } from 'element-plus/es/components/image-viewer/index'
 import { atWillToUnit } from '@hairy/utils'
-import HairyImageViewer from './parts/HairyImageViewer.vue'
+import HairyImageViewer from './HairyImageViewer.vue'
 
 const props = withDefaults(defineProps<{
   row?: string | number

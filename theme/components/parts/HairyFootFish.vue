@@ -1,7 +1,8 @@
 <!-- eslint-disable no-new -->
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import { useScriptTag } from '@vueuse/core'
+import { isDark } from 'valaxy'
 import { RENDERER } from './HairyFootFish'
 
 const fishContainer = ref()
@@ -11,7 +12,7 @@ const tag = useScriptTag('https://cdn.bootcdn.net/ajax/libs/zepto/1.2.0/zepto.mi
 let renderer: RENDERER
 
 function reset() {
-  const color = 'hsl(0, 0%, 95%)'
+  const color = isDark.value ? 'hsl(0, 0%, 95%)' : 'hsl(0, 0%, 80%)'
   if (!renderer)
     renderer = new RENDERER(color)
   else
@@ -22,8 +23,14 @@ onMounted(() => {
   tag.load()
     .then(reset)
 })
+watch(isDark, reset)
 </script>
 
 <template>
-  <div id="jsi-flying-fish-container" ref="fishContainer" style="margin-top: -60px;" />
+  <div
+    id="jsi-flying-fish-container"
+    ref="fishContainer"
+    class="z-1 relative"
+    style="margin-top: -60px;"
+  />
 </template>
