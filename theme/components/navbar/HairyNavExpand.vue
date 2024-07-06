@@ -6,7 +6,7 @@ const { showDrawer } = storeToRefs(useGlobalStore())
 </script>
 
 <template>
-  <button class="yun-icon-btn lt-sm:text-size-xl" @click="showDrawer = true">
+  <button class="yun-icon-btn lt-sm:text-size-xl" @click="showDrawer = !showDrawer">
     <div i="ri-menu-fill" />
   </button>
 </template>

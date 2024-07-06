@@ -23,13 +23,15 @@ const show = computed(() => {
   return scroll.y.value < (headerHeight.value / 2)
     || dire.value === 'top'
 })
-
 const config = useSiteConfig()
 onMounted(() => documentRef.value = document)
 </script>
 
 <template>
-  <div class="fixed w-full h-3.125rem lt-sm:h-3.5rem top-0 z-20 opacity-0 transition-opacity duration-200" :class="[show && 'opacity-100']">
+  <div
+    class="fixed w-full h-3.125rem lt-sm:h-3.5rem top-0 opacity-0 transition-opacity duration-200 z-10000"
+    :class="[show && 'opacity-100']"
+  >
     <div class="mx-auto breakpoint flex relative z-1 h-full">
       <div class="flex items-center lt-sm:order-1 lt-sm:flex-1 justify-center">
         <HairyLink class="px-2.5" type="white" :href="config.url">

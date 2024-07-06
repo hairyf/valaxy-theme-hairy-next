@@ -15,6 +15,7 @@ watch(() => route.fullPath, () => showDrawer.value = false)
 
 <template>
   <ElDrawer v-model="showDrawer" direction="ltr" size="auto" @close="showDrawer = false">
+    <div class="h-24px" />
     <HairyTabbar v-if="route.fullPath.includes('/posts/')" />
     <HairySidebar v-else />
     <div class="dark:hidden absolute inset-0 bg-white bg-opacity-85" />
