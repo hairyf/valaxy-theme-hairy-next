@@ -39,7 +39,7 @@ function displayCategory(keys: string | string[] = []) {
           <span class="lt-sm:hidden">{{ post.readingTime }}分钟</span>
         </div>
       </div>
-      <div class="h-200px lt-sm:h-150px flex bg-light-2 dark:bg-transparent rounded-5 duration-200" :class="[reverse ? 'pl-4' : 'pr-4']">
+      <div class="h-200px lt-sm:h-150px flex bg-light-2 dark:bg-transparent rounded-5" :class="[reverse ? 'pl-4' : 'pr-4']">
         <div class="flex-1 post-image-content" :class="[reverse ? 'order-last' : 'order-first']">
           <img
             class="post-image rounded-1 w-full h-full object-cover cursor-pointer" :src="image"
@@ -85,7 +85,7 @@ function displayCategory(keys: string | string[] = []) {
 
 .dark {
   .post-image {
-    @apply opacity-75 hover: opacity-90 duration-200;
+    @apply opacity-75 hover:opacity-90 ;
   }
 }
 
@@ -114,7 +114,7 @@ function displayCategory(keys: string | string[] = []) {
 
 .HairyArticleImage.slice {
   .post-image {
-    @apply transition-all;
+    // @apply transition-all;
   }
 
   &:hover {

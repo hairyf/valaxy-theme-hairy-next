@@ -1,10 +1,15 @@
 <script lang="ts" setup>
 import { usePostList, useTags } from 'valaxy'
-import { computed } from 'vue'
+import { computed, nextTick } from 'vue'
+import { useRouter } from 'vue-router'
+import { storeToRefs } from 'pinia'
 import { toArray } from '../../utils'
+import { useGlobalStore } from '../../store'
 
 const posts = usePostList()
 const tags = useTags()
+const router = useRouter()
+const { showDrawer } = storeToRefs(useGlobalStore())
 
 const total = computed(() => {
   const categories = posts.value.map(v => toArray(v.categories || [])).filter(v => v.length)
@@ -19,19 +24,25 @@ const total = computed(() => {
   }
   return new Set(maps).size
 })
+
+async function navigation(path: string) {
+  await router.push(path)
+  await nextTick()
+  showDrawer.value = false
+}
 </script>
 
 <template>
   <div class="flex justify-center mt-2">
-    <HairyUserStats :count="posts.length" @click="$router.push('/archives/')">
+    <HairyUserStats :count="posts.length" @click="navigation('/archives/')">
       文章
     </HairyUserStats>
     <div class="w-1px bg-gray bg-opacity-50" />
-    <HairyUserStats :count="total" @click="$router.push('/categories/')">
+    <HairyUserStats :count="total" @click="navigation('/categories/')">
       分类
     </HairyUserStats>
     <div class="w-1px bg-gray bg-opacity-50" />
-    <HairyUserStats :count="tags.size" @click="$router.push('/tags/')">
+    <HairyUserStats :count="tags.size" @click="navigation('/tags/')">
       标签
     </HairyUserStats>
   </div>
@@ -52,7 +63,7 @@ const total = computed(() => {
         justify-content: center;
       }
       border-radius: 10px;
-      transition: all 0.3s;
+      transition: all 0.2s;
       background-color: transparent;
       user-select: none;
     }

@@ -22,8 +22,7 @@
 
 <style lang="scss">
 .HairyBodyBackground {
-  @apply transition-all duration-200;
-  @apply absolute top-0 max-h-150vh top-5 bottom-0 w-full transition-opacity;
+  @apply absolute top-0 max-h-150vh top-5 bottom-0 w-full;
   opacity: 0;
 }
 .main {
@@ -34,8 +33,6 @@
 
 .dark {
   .HairyBodyBackground {
-    transition-delay: 200ms;
-    transition-delay: 0;
     opacity: 1;
     background-image:
       linear-gradient(to bottom, var(--hy-c-waves-dimm) 0%, transparent 60%, var(--hy-c-waves-dimm) 100%), url(./images/bg.jpg);

@@ -2,12 +2,12 @@
 </script>
 
 <template>
-  <div class="min-h-80vh">
+  <HairyContainer>
     <HairyNavbar />
     <HairyHeader title="分类" />
     <HairyBody>
       <router-view />
     </HairyBody>
     <HairyFooter />
-  </div>
+  </HairyContainer>
 </template>

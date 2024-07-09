@@ -10,7 +10,7 @@ import { toArray } from '../../utils'
 withDefaults(
   defineProps<{
     post: Post
-    format: string
+    format?: string
   }>(),
   {
     format: 'YYYY-MM-DD',

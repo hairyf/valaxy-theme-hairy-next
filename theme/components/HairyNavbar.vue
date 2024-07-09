@@ -29,7 +29,7 @@ onMounted(() => documentRef.value = document)
 
 <template>
   <div
-    class="fixed w-full h-3.125rem lt-sm:h-3.5rem top-0 opacity-0 transition-opacity duration-200 z-10000"
+    class="fixed w-full h-3.125rem lt-sm:h-3.5rem top-0 opacity-0 z-10000"
     :class="[show && 'opacity-100']"
   >
     <div class="mx-auto breakpoint flex relative z-1 h-full">

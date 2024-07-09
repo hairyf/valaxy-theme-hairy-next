@@ -52,7 +52,7 @@ function displayCategory(key: string) {
     <template v-for="([key, item]) in current.children" :key="key">
       <div
         v-if="!key.startsWith('/post')"
-        class="relative flex items-center flex-col cursor-pointer hover:text-primary transition-color"
+        class="relative flex items-center flex-col cursor-pointer hover:text-primary transition-colors"
         @click="displayCategory(key)"
       >
         <div class="i-material-symbols-folder-open-rounded text-22 lt-sm:text-15" />

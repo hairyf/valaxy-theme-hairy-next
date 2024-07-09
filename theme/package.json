@@ -32,9 +32,9 @@
     "@iconify-json/fluent": "^1.1.18",
     "@iconify-json/material-symbols": "^1.1.83",
     "@iconify-json/simple-icons": "^1.1.19",
-    "valaxy": "^0.18.9",
+    "valaxy": "^0.19.1",
     "valaxy-addon-algolia": "^0.0.3",
     "valaxy-addon-meting": "^0.1.3",
-    "valaxy-addon-waline": "^0.1.4"
+    "valaxy-addon-waline": "^0.1.5"
   }
 }

@@ -22,7 +22,7 @@ function displayTag(tag: string) {
 </script>
 
 <template>
-  <div class="min-h-80vh">
+  <HairyContainer>
     <HairyNavbar />
     <HairyHeader :title="post.title">
       <template #description>
@@ -50,6 +50,5 @@ function displayTag(tag: string) {
       </template>
     </HairyBody>
     <HairyFooter />
-    <HairyDrawer />
-  </div>
+  </HairyContainer>
 </template>

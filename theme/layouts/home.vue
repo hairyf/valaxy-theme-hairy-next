@@ -14,7 +14,7 @@ const hello = riposte(
 </script>
 
 <template>
-  <div class="min-h-80vh">
+  <HairyContainer>
     <HairyNavbar>
       <template #nav>
         <slot name="header-nav" />
@@ -29,5 +29,5 @@ const hello = riposte(
       <router-view />
     </HairyBody>
     <HairyFooter />
-  </div>
+  </HairyContainer>
 </template>
