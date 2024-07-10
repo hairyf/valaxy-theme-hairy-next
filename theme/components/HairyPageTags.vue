@@ -21,7 +21,7 @@ function displayTag(tag: string) {
     <div text="center" class="max-w-7xl flex flex-wrap justify-center items-center gap-2">
       <a
         v-for="[key, tag] in Array.from(tags).sort()"
-        :key="key" class="post-tag cursor-pointer"
+        :key="key" class="post-tag cursor-pointer transition-all duration-200"
         :style="getTagStyle(tag.count)"
         p="1"
         @click="displayTag(key.toString())"
