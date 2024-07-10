@@ -21,7 +21,6 @@
   "main": "client/index.ts",
   "types": "types/index.d.ts",
   "dependencies": {
-    "@hairy/utils": "^0.6.8",
     "@overlastic/vue": "^0.4.7",
     "element-plus": "^2.7.6",
     "pinia": "^2.1.7",

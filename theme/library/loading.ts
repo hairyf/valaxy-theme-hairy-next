@@ -1,8 +1,8 @@
 import './loading.scss'
 import { ref } from 'vue'
 import type { ViteSSGContext } from 'vite-ssg'
-import { createDeferred } from '@hairy/utils'
 import Seto from '../styles/fonts/Seto.ttf?url'
+import { createDeferred } from '../utils'
 
 export const fontFaceDeferred = createDeferred<void>()
 
