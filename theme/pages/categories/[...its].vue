@@ -6,8 +6,6 @@ import { useThemeConfig } from 'valaxy'
 import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
 
 import type { HairyTheme } from '../..'
-import 'element-plus/es/components/timeline/style/index'
-import 'element-plus/es/components/timeline-item/style/index'
 import { useCategory, useCategoryPost } from '../../composables'
 
 const themeConfig = useThemeConfig<HairyTheme.Config>()

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+console.log('---')
 </script>
 
 <template>
@@ -6,7 +7,7 @@
     <HairyNavbar />
     <HairyHeader title="所有标签" />
     <HairyBody>
-      <router-view />
+      <HairyPageTags />
     </HairyBody>
     <HairyFooter />
   </HairyContainer>

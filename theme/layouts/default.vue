@@ -1,3 +1,6 @@
+<script lang="ts" setup>
+</script>
+
 <template>
   <HairyContainer>
     <HairyNavbar />
@@ -8,3 +11,5 @@
     <HairyFooter />
   </HairyContainer>
 </template>
+
+

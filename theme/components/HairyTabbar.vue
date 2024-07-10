@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ElTabPane, ElTabs } from 'element-plus/es/components/tabs/index'
-import 'element-plus/es/components/tabs/style/index'
-import 'element-plus/es/components/tab-pane/style/index'
+import 'element-plus/theme-chalk/el-tabs.css'
+import 'element-plus/theme-chalk/el-tab-pane.css'
 import { computed, provide, ref } from 'vue'
 
 import type { DefaultTheme } from 'valaxy/types'

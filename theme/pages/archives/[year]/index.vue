@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
-import 'element-plus/es/components/timeline/style/index'
-import 'element-plus/es/components/timeline-item/style/index'
 import { computed } from 'vue'
 import type { Post } from 'valaxy'
 import { useRoute } from 'vue-router'

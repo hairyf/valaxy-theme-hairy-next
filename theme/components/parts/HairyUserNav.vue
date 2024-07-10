@@ -59,13 +59,13 @@ async function navigation(path: string) {
       padding: 2px;
       width: 100%;
       border: 1px solid transparent;
-      > div {
-        justify-content: center;
-      }
       border-radius: 10px;
       transition: all 0.2s;
       background-color: transparent;
       user-select: none;
+      > div {
+        justify-content: center;
+      }
     }
 
     .HairyMenuItem:hover,

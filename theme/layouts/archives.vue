@@ -3,7 +3,7 @@
     <HairyNavbar />
     <HairyHeader />
     <HairyBody>
-      <router-view />
+      <HairyPageArchives />
     </HairyBody>
     <HairyFooter />
     <HairyDrawer />

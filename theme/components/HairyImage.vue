@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ElImage, imageProps } from 'element-plus/es/components/image/index'
-import 'element-plus/es/components/image/style/index'
+import 'element-plus/theme-chalk/el-image.css'
 import { inject } from 'vue'
 
 const props = defineProps(imageProps)

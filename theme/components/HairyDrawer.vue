@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import 'element-plus/es/components/drawer/style/index'
+import 'element-plus/theme-chalk/el-dialog.css'
 import { ElDrawer } from 'element-plus/es/components/drawer/index'
 import { useRoute } from 'vue-router'
 import { watch } from 'vue'
@@ -24,11 +24,10 @@ watch(() => route.fullPath, () => showDrawer.value = false)
 
 <style lang="scss">
   .el-drawer {
+    background-color: transparent;
     .el-drawer__header {
       display: none;
     }
-
-    background-color: transparent;
     .el-icon.el-drawer__close {
       font-size: 24px;
     }

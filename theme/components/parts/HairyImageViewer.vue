@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { usePrograms } from '@overlastic/vue'
 import { ElImageViewer, imageViewerProps } from 'element-plus/es/components/image-viewer/index'
-import 'element-plus/es/components/image-viewer/style/index'
+import 'element-plus/theme-chalk/el-image-viewer.css'
 import { onMounted, onUnmounted } from 'vue'
 
 const props = defineProps(imageViewerProps)

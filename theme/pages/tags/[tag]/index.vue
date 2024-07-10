@@ -2,8 +2,6 @@
 import { computed } from 'vue'
 import { usePostList } from 'valaxy'
 import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
-import 'element-plus/es/components/timeline/style/index'
-import 'element-plus/es/components/timeline-item/style/index'
 import { useRoute } from 'vue-router'
 
 const tag = computed(() => useRoute().params.tag)
