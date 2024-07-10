@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-import 'element-plus/theme-chalk/el-dialog.css'
+import 'element-plus/theme-chalk/el-drawer.css'
+import 'element-plus/theme-chalk/el-overlay.css'
+
 import { ElDrawer } from 'element-plus'
 import { useRoute } from 'vue-router'
 import { watch } from 'vue'
@@ -14,7 +16,7 @@ watch(() => route.fullPath, () => showDrawer.value = false)
 </script>
 
 <template>
-  <ElDrawer v-model="showDrawer" direction="ltr" size="auto" @close="showDrawer = false">
+  <ElDrawer v-model="showDrawer" :z-index="10000" class="z-100" direction="ltr" size="auto" @close="showDrawer = false">
     <div class="h-24px" />
     <HairyTabbar v-if="route.fullPath.includes('/posts/')" />
     <HairySidebar v-else />
@@ -23,7 +25,7 @@ watch(() => route.fullPath, () => showDrawer.value = false)
 </template>
 
 <style lang="scss">
-  .el-drawer {
+.el-drawer {
     background-color: transparent;
     .el-drawer__header {
       display: none;

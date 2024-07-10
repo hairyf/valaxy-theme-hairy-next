@@ -5,7 +5,7 @@
   <div class="min-h-49vh relative z-5">
     <div class="mx-auto container flex z-1 relative">
       <div class="relative flex-1 pt-2 main">
-        <slot />
+        <slot v-if="$slots.default" />
         <HairyComment />
       </div>
       <div class="ml-4 w-60 lg:block hidden">
@@ -15,7 +15,6 @@
         </div>
       </div>
     </div>
-
     <div class="HairyBodyBackground" />
   </div>
 </template>
