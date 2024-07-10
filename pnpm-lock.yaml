@@ -48,9 +48,6 @@ importers:
 
   theme:
     dependencies:
-      '@hairy/utils':
-        specifier: ^0.6.8
-        version: 0.6.8
       '@overlastic/vue':
         specifier: ^0.4.7
         version: 0.4.7(typescript@5.3.3)
@@ -985,10 +982,6 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@extra-array/arange@1.1.7:
-    resolution: {integrity: sha512-AOZQCNohh2fPvC7o/5YhrSTwwrJwXiHBSVDY+CZQ2j8P5TsX+fkUYP9FVdvvfoRcINFXhm5Y18bUVBphFNxUVA==}
-    dev: false
-
   /@floating-ui/core@1.6.4:
     resolution: {integrity: sha512-a4IowK4QkXl4SCWTGUR0INAfEOX3wtsYw3rKK5InQEHMGObkR8Xk44qYQD9P4r6HHw0iIfK6GUKECmY8sTkqRA==}
     dependencies:
@@ -1004,15 +997,6 @@ packages:
 
   /@floating-ui/utils@0.2.4:
     resolution: {integrity: sha512-dWO2pw8hhi+WrXq1YJy2yCuWoL20PddgGaqTgVe4cOS9Q6qklXCiA1tJEqX6BEwRNSCP84/afac9hd4MS+zEUA==}
-    dev: false
-
-  /@hairy/utils@0.6.8:
-    resolution: {integrity: sha512-sSBevcHTJ1/7UEk73DdkeK1h9+Wb5V7IrUS+FZC5qVOIOhstyzKVvCjZwyNcHoZKv6P/Mh0trFPn0z44eLdlfg==}
-    dependencies:
-      '@extra-array/arange': 1.1.7
-      delay: 5.0.0
-      lodash: 4.17.21
-      p-pipe: 4.0.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -3226,11 +3210,6 @@ packages:
     resolution: {integrity: sha512-8nvh+XBe96aCESrGOqMp/84b13H9cdKbG5P2ejQCh4d4sK9RL4371qou9drQjMhvnPmhWl5hnmqbEE0fXr9Xnw==}
     dependencies:
       robust-predicates: 3.0.2
-
-  /delay@5.0.0:
-    resolution: {integrity: sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==}
-    engines: {node: '>=10'}
-    dev: false
 
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -5470,11 +5449,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-limit: 3.1.0
-
-  /p-pipe@4.0.0:
-    resolution: {integrity: sha512-HkPfFklpZQPUKBFXzKFB6ihLriIHxnmuQdK9WmLDwe4hf2PdhhfWT/FJa+pc3bA1ywvKXtedxIRmd4Y7BTXE4w==}
-    engines: {node: '>=12'}
-    dev: false
 
   /p-try@2.2.0:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
