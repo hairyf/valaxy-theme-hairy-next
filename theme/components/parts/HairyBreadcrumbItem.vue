@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElBreadcrumbItem, breadcrumbItemProps } from 'element-plus/es/components/breadcrumb/index'
+import { ElBreadcrumbItem, breadcrumbItemProps } from 'element-plus'
 
 defineProps(breadcrumbItemProps)
 </script>

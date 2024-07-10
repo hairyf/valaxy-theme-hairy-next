@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import 'element-plus/theme-chalk/el-dialog.css'
-import { ElDrawer } from 'element-plus/es/components/drawer/index'
+import { ElDrawer } from 'element-plus'
 import { useRoute } from 'vue-router'
 import { watch } from 'vue'
 import { storeToRefs } from 'pinia'

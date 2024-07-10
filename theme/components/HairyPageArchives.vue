@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
+import { ElTimeline, ElTimelineItem } from 'element-plus'
 import { usePostList } from 'valaxy'
 
 import { getArchiveLink } from '../utils'

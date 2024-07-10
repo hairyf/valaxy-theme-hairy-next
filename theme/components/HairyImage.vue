@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElImage, imageProps } from 'element-plus/es/components/image/index'
+import { ElImage, imageProps } from 'element-plus'
 import 'element-plus/theme-chalk/el-image.css'
 import { inject } from 'vue'
 

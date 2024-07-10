@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElBreadcrumb, breadcrumbProps } from 'element-plus/es/components/breadcrumb/index'
+import { ElBreadcrumb, breadcrumbProps } from 'element-plus'
 import 'element-plus/theme-chalk/el-breadcrumb.css'
 import type { PropType } from 'vue'
 import { computed } from 'vue'

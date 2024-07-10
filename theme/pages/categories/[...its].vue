@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 import { useThemeConfig } from 'valaxy'
-import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
+import { ElTimeline, ElTimelineItem } from 'element-plus'
 
 import type { HairyTheme } from '../..'
 import { useCategory, useCategoryPost } from '../../composables'

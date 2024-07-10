@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElTimeline, ElTimelineItem } from 'element-plus/es/components/timeline/index'
+import { ElTimeline, ElTimelineItem } from 'element-plus'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useYearArchives } from '../../../../composables'

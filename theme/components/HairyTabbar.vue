@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ElTabPane, ElTabs } from 'element-plus/es/components/tabs/index'
+import { ElTabPane, ElTabs } from 'element-plus'
 import 'element-plus/theme-chalk/el-tabs.css'
 import 'element-plus/theme-chalk/el-tab-pane.css'
 import { computed, provide, ref } from 'vue'

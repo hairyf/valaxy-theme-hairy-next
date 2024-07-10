@@ -2,7 +2,7 @@
 import { dayjs } from 'element-plus'
 import { useFrontmatter } from 'valaxy'
 import { useRouter } from 'vue-router'
-import { ElTag } from 'element-plus/es/components/tag/index'
+import { ElTag } from 'element-plus'
 import 'element-plus/theme-chalk/el-tag.css'
 
 defineProps<{

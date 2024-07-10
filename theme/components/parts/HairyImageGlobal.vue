@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { provide, useCssVars } from 'vue'
 import { renderOverlay } from '@overlastic/vue'
-import type { ImageViewerProps } from 'element-plus/es/components/image-viewer/index'
+import type { ImageViewerProps } from 'element-plus'
 import { atWillToUnit } from '@hairy/utils'
 import HairyImageViewer from './HairyImageViewer.vue'
 
