@@ -85,7 +85,7 @@ function displayCategory(keys: string | string[] = []) {
 
 .dark {
   .post-image {
-    @apply opacity-75 hover:opacity-90 ;
+    @apply opacity-75 hover:opacity-90 duration-200;
   }
 }
 

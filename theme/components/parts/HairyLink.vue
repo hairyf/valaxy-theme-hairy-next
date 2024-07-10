@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <a
-    class="cursor-pointer" :class="[
+    class="cursor-pointer transition-colors" :class="[
       type === 'white'
         ? 'text-black hover:text-primary dark:text-white'
         : 'text:text-primary-light hover:text-primary-dark',

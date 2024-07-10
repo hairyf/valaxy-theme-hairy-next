@@ -16,6 +16,9 @@ export default defineTheme<ThemeConfig>((options) => {
       },
       outline: 2,
       theme: 'dark',
+      layout: {
+        post: 'image:slice:reverse'
+      }
     },
   }
 

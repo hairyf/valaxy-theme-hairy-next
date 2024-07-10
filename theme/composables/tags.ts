@@ -24,7 +24,7 @@ export function useHairyTags(options: {
     const range = max - min
     const percent = (count - min) / range
     return {
-      '--yun-tag-color': gray.mix(primaryColor, percent * 100).toString(),
+      '--yun-tag-color': gray.mix(primaryColor, (percent || 0) * 100).toString(),
       'fontSize': `${percent * 36 + 12}px`,
     }
   }
