@@ -59,7 +59,7 @@ function displayCategory(keys: string | string[] = []) {
               </span>
             </a>
             <div class="text-base leading-6 font-medium">
-              <a class="link cursor-pointer" aria-label="read more" @click="onReadMore">
+              <a class="link flex gap-2 cursor-pointer" aria-label="read more" @click="onReadMore">
                 <span v-if="reverse">←</span>
                 <span class="hidden md:block">Read more</span>
                 <span v-if="!reverse">→</span>

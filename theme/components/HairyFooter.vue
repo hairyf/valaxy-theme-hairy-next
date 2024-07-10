@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { capitalize, computed } from 'vue'
-import { useConfig, useSiteConfig, useThemeConfig } from 'valaxy'
+import { useConfig, useSiteConfig, useThemeConfig, useRuntimeConfig } from 'valaxy'
 import { useI18n } from 'vue-i18n'
 import pkg from 'valaxy/package.json'
 import type { HairyTheme } from 'valaxy-theme-hairy'
@@ -19,8 +19,8 @@ const isThisYear = computed(() => {
 
 const poweredHtml = computed(() => t('footer.powered', [`<a href="${pkg.repository}" target="_blank" rel="noopener">Valaxy</a> v${pkg.version}`]))
 const footerIcon = computed(() => themeConfig.value.footer?.icon)
-
-// const frontmatter = useFrontmatter()
+const runtimeConfig = useRuntimeConfig()
+const addonWaline = computed(() => runtimeConfig.value.addons['valaxy-addon-waline'])
 </script>
 
 <template>
@@ -45,11 +45,14 @@ const footerIcon = computed(() => themeConfig.value.footer?.icon)
         </a>
 
         <span>{{ sideConfig.author.name }}</span>
-        <span class="mx-2">|</span>
-        <span class="flex items-center">
-          <div class="i-ri-eye-fill mr-1" />
-          <span class="waline-pageview-count" data-path="/">-</span>
-        </span>
+        <template v-if="addonWaline.options?.pageview">
+          <span class="mx-2">|</span>
+          <span class="flex items-center">
+            <div class="i-ri-eye-fill mr-1" />
+            <span class="waline-pageview-count" data-path="/" />
+          </span>
+        </template>
+        
       </div>
       <div v-if="themeConfig.footer.powered" class="powered" m="2">
         <span v-html="poweredHtml" /> | <span>{{ t('footer.theme') }} - <a :href="themeConfig.pkg.homepage" :title="`valaxy-theme-${config.theme}`" target="_blank">{{ capitalize(config.theme) }}</a> v{{ themeConfig.pkg.version }}</span>

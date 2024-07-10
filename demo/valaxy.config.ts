@@ -52,11 +52,12 @@ export default defineConfig<ThemeConfig>({
     }),
     addonWaline({
       comment: true,
-      serverURL: 'https://valaxy-blog-waline.vercel.app/',
+      serverURL: 'https://blog-waline-hairy.vercel.app',
       emoji: [
         '//unpkg.com/@waline/emojis@1.0.1/weibo',
         '//unpkg.com/@waline/emojis@1.0.1/bilibili',
       ],
+      pageview: true,
     }),
     addonMeting({
       global: true,
