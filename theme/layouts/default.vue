@@ -11,5 +11,3 @@
     <HairyFooter />
   </HairyContainer>
 </template>
-
-

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { dayjs } from 'element-plus'
+import { ElTag, dayjs } from 'element-plus'
 import { useFrontmatter } from 'valaxy'
 import { useRouter } from 'vue-router'
-import { ElTag } from 'element-plus'
+
 import 'element-plus/theme-chalk/el-tag.css'
 
 defineProps<{

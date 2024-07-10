@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-console.log('---')
-</script>
-
 <template>
   <HairyContainer>
     <HairyNavbar />
