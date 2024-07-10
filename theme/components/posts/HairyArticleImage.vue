@@ -61,7 +61,7 @@ function displayCategory(keys: string | string[] = []) {
             <div class="text-base leading-6 font-medium">
               <a class="link cursor-pointer" aria-label="read more" @click="onReadMore">
                 <span v-if="reverse">←</span>
-                Read more
+                <span class="hidden md:block">Read more</span>
                 <span v-if="!reverse">→</span>
               </a>
             </div>

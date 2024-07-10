@@ -15,7 +15,7 @@ const title = computed(() => props.title || post.value.title)
 </script>
 
 <template>
-  <div class="flex-center flex-col text-shadow-lg text-white">
+  <div class="flex-center flex-col text-shadow-lg text-white mx-12px text-center">
     <div v-if="headline" class="font-frederick text-size-3.35em lt-sm:text-size-3rem leading-snug">
       {{ headline }}
     </div>

@@ -6,7 +6,7 @@ export default defineSiteConfig({
   url: 'https://www.hairy.blog/',
   author: {
     avatar: 'https://pic.imgdb.cn/item/62fe02d616f2c2beb14bc2f3.jpg',
-    name: '毛先生',
+    name: 'Valaxy Theme Hairy Preview',
   },
   search: {
     enable: true,

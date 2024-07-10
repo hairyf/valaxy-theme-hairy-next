@@ -32,7 +32,10 @@ const text = computed(() => {
           />
         </div>
         <div class="text-base leading-6 font-medium">
-          <a class="link" aria-label="read more" :href="post.path">Read more →</a>
+          <a class="link" aria-label="read more" :href="post.path">
+            <span class="hidden md:block">Read more</span>
+            <span> →</span>
+          </a>
         </div>
       </div>
     </article>
