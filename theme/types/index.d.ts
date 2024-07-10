@@ -14,7 +14,7 @@ export interface ThemeConfig {
    *
    * @default 'light'
    */
-  mode?: 'dark' | 'light'
+  theme?: 'dark' | 'light'
 
   home?: Home
 
