@@ -1,4 +1,3 @@
-
 function isString(val: any) {
   return typeof val === 'string'
 }
@@ -14,8 +13,8 @@ export function atWillToUnit(value: any, unit = 'px') {
 }
 
 /** size 转换配置 */
-export type AtWillSize = any | [any, any] | { width: any; height: any }
-export interface Size { width: string; height: string }
+export type AtWillSize = any | [any, any] | { width: any, height: any }
+export interface Size { width: string, height: string }
 
 /**
  * 将 size 转换为宽高，用于元素宽高

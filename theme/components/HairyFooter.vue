@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { capitalize, computed } from 'vue'
-import { useConfig, useSiteConfig, useThemeConfig, useRuntimeConfig } from 'valaxy'
+import { useConfig, useRuntimeConfig, useSiteConfig, useThemeConfig } from 'valaxy'
 import { useI18n } from 'vue-i18n'
 import pkg from 'valaxy/package.json'
 import type { HairyTheme } from 'valaxy-theme-hairy'
@@ -52,7 +52,6 @@ const addonWaline = computed(() => runtimeConfig.value.addons['valaxy-addon-wali
             <span class="waline-pageview-count" data-path="/" />
           </span>
         </template>
-        
       </div>
       <div v-if="themeConfig.footer.powered" class="powered" m="2">
         <span v-html="poweredHtml" /> | <span>{{ t('footer.theme') }} - <a :href="themeConfig.pkg.homepage" :title="`valaxy-theme-${config.theme}`" target="_blank">{{ capitalize(config.theme) }}</a> v{{ themeConfig.pkg.version }}</span>
