@@ -15,7 +15,7 @@ export default defineTheme<ThemeConfig>((options) => {
         circleTransition: true,
       },
       outline: 2,
-      theme: 'dark'
+      theme: 'dark',
     },
   }
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { setupDefaultDark } from '../composables'
 import { onMounted } from 'vue'
+import { setupDefaultDark } from '../composables'
 
 onMounted(setupDefaultDark)
 </script>
