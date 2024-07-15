@@ -19,7 +19,7 @@ export default defineTheme<ThemeConfig>((options) => {
     },
     markdown: {
       theme: {
-        dark: 'nord',
+        dark: 'material-theme-darker',
         light: 'material-theme-lighter',
       },
       config(md) {
