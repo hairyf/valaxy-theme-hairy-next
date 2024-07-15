@@ -1,4 +1,12 @@
 <script lang="ts" setup>
+withDefaults(
+  defineProps<{
+    comment?: boolean
+  }>(),
+  {
+    comment: true,
+  },
+)
 </script>
 
 <template>
@@ -6,7 +14,7 @@
     <div class="mx-auto container flex z-1 relative">
       <div class="relative flex-1 pt-2 main">
         <slot v-if="$slots.default" />
-        <HairyComment />
+        <HairyComment v-if="comment" />
       </div>
       <div class="ml-4 w-60 lg:block hidden">
         <div class="sticky top-3.125rem z-1">

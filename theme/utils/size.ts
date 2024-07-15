@@ -19,7 +19,6 @@ export interface Size { width: string, height: string }
 /**
  * 将 size 转换为宽高，用于元素宽高
  * @param size AtWillSize
- * @returns
  */
 export function atWillToSize(size: AtWillSize, unit?: string): Size {
   const _atWillToUnit = (value: any) => atWillToUnit(value, unit)

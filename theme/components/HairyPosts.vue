@@ -9,6 +9,7 @@ const props = withDefaults(defineProps<{
   posts?: Post[]
   curPage?: number
   pagination?: boolean
+  updated?: boolean
 }>(), {
   curPage: 1,
   pagination: false,
@@ -25,6 +26,7 @@ const displayedPosts = computed(() => props.pagination ? pagePosts.value : posts
 <template>
   <div class="mt-8">
     <HairyPostToggleLayout />
+    <HairyUpdatedPost v-if="updated" :posts="posts" />
     <HairyPostImageList v-if="layout.includes('image')" :posts="displayedPosts" />
     <HairyPostTextsList v-else :posts="displayedPosts" />
     <ValaxyPagination v-if="pagination" class="mb-6" :cur-page="curPage" :page-size="pageSize" :total="posts.length" />

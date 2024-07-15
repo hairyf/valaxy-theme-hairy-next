@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
-import { useHairyTags } from '../../composables'
+import { useHairyTags } from '../composables'
 
 const router = useRouter()
 

@@ -1,10 +1,4 @@
-<script setup lang="ts">
-
-</script>
-
-<template>
-  <HairyPosts :pagination="true" :cur-page="parseInt(String($route.params.page))" />
-</template>
+<template></template>
 
 <route lang="yaml">
 meta:

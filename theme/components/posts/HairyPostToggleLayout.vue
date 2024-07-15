@@ -26,7 +26,10 @@ const show = computed(() => {
 </script>
 
 <template>
-  <div class="inline-flex gap-2 sticky top-15 inset-0 rounded-2" :class="[show && 'bg-white bg-opacity-85 dark:bg-black dark:bg-opacity-80 z-100']">
+  <div
+    class="inline-flex gap-2 sticky top-15 inset-0 rounded-2 transition-colors duration-200"
+    :class="[show && 'bg-white bg-opacity-85 dark:bg-black dark:bg-opacity-80 z-100']"
+  >
     <div v-for="(item) in layouts" :key="item.layout" class="p-2 rounded-full cursor-pointer" :class="[layout === item.layout && 'text-primary']" @click="layout = item.layout">
       <div class="text-size-xl" :class="item.icon" />
     </div>

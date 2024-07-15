@@ -6,7 +6,9 @@ import { onMounted, onUnmounted } from 'vue'
 
 const props = defineProps(imageViewerProps)
 
-const { visible, resolve } = usePrograms()
+const { visible, resolve } = usePrograms({
+  duration: 1000,
+})
 
 onMounted(() => {
   document.body.style.overflow = 'hidden'

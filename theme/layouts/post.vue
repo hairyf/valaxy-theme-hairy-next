@@ -4,8 +4,6 @@ import { useFrontmatter, useRuntimeConfig } from 'valaxy'
 import { useRouter } from 'vue-router'
 import { computed } from 'vue'
 
-import 'element-plus/theme-chalk/el-tag.css'
-
 defineProps<{
   header?: {
     title?: string

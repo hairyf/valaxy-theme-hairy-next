@@ -30,6 +30,8 @@ function createElement() {
 }
 
 function showFullLoading() {
+  if (typeof window === 'undefined')
+    return
   if (!el)
     el = createElement()
   el.style.opacity = '0'
@@ -52,6 +54,8 @@ function hideFullLoading() {
 }
 
 function loadFonts(fontFamily: string, url: string) {
+  if (typeof window === 'undefined')
+    return
   const font = new FontFace(fontFamily, `url(${url})`)
   font.load().then(() => {
     ;(document.fonts as any).add(font)

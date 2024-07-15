@@ -1,6 +1,4 @@
-<template>
-  <HairyPosts pagination />
-</template>
+<template></template>
 
 <route lang="yaml">
 meta:

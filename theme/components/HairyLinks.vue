@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue'
+
 defineProps<{
   links?: {
     name: string

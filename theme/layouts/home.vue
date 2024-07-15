@@ -25,8 +25,8 @@ const hello = riposte(
       :title="config.author.name"
       :description="`${hello}, how are you doing?`"
     />
-    <HairyBody>
-      <router-view />
+    <HairyBody :comment="false">
+      <HairyPosts updated pagination :cur-page="parseInt(String($route.params.page || 1))" />
     </HairyBody>
     <HairyFooter />
   </HairyContainer>

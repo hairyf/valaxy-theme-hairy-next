@@ -17,6 +17,7 @@
     "@antfu/eslint-config": "2.6.3",
     "bumpp": "^9.3.0",
     "eslint": "^8.56.0",
+    "taze": "^0.15.0",
     "typescript": "^5.3.3",
     "valaxy": "^0.19.1",
     "valaxy-theme-hairy": "workspace:*",
