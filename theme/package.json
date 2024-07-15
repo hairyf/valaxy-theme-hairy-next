@@ -21,6 +21,7 @@
   "main": "client/index.ts",
   "types": "types/index.d.ts",
   "dependencies": {
+    "@docsearch/css": "^3.6.0",
     "@iconify-json/ant-design": "^1.1.16",
     "@iconify-json/fluent": "^1.1.59",
     "@iconify-json/material-symbols": "^1.1.84",
