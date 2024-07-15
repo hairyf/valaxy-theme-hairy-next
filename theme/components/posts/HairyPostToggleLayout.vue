@@ -18,7 +18,7 @@ const layouts = [
 const globalStore = useGlobalStore()
 const { headerRef } = storeToRefs(globalStore)
 const { height: headerHeight } = useElementSize(headerRef)
-const scroll = useScroll(document)
+const scroll = useScroll(typeof document !== 'undefined' ? document : undefined)
 
 const show = computed(() => {
   return scroll.y.value > headerHeight.value

@@ -43,6 +43,8 @@ function showFullLoading() {
 }
 
 function hideFullLoading() {
+  if (typeof window === 'undefined')
+    return
   if (!el)
     return
   el.style.opacity = '0'
