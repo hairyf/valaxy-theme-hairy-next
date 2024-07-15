@@ -1,14 +1,10 @@
 import type { DefaultTheme, ValaxyTheme } from 'valaxy'
 import { defineTheme, mergeValaxyConfig } from 'valaxy'
-import { addonAlgolia } from 'valaxy-addon-algolia'
 import { withImageConfig, withThemeConfig } from './node'
 import type { ThemeConfig } from './types'
 
 export default defineTheme<ThemeConfig>((options) => {
   let config: ValaxyTheme<ThemeConfig & DefaultTheme.Config> = {
-    addons: [
-      addonAlgolia(),
-    ],
     themeConfig: {
       valaxyDarkOptions: {
         useDarkOptions: { disableTransition: false },
@@ -19,6 +15,9 @@ export default defineTheme<ThemeConfig>((options) => {
       layout: {
         post: 'image:slice:reverse',
       },
+    },
+    vite: {
+      optimizeDeps: { include: ['dayjs', 'element-plus'] },
     },
   }
 
