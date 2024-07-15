@@ -1,4 +1,8 @@
-@forward 'valaxy/client/styles/mixins/index.scss';
+@use 'valaxy/client/styles/mixins/index.scss' as *;
+
+@use 'valaxy/client/styles/components/code.scss' as *;
+@use 'valaxy/client/styles/components/code-group.scss' as *;
+@use 'valaxy/client/styles/components/custom-block.scss' as *;
 
 .markdown-body {
   --c-toc-link: var(--hy-c-text-light);
@@ -11,12 +15,8 @@ html.dark {
 }
 
 .markdown-body {
+  --un-prose-borders: var(--hy-c-primary);
   word-wrap: break-word;
-
-  h2,
-  a {
-    color: var(--hy-c-primary);
-  }
 
   h1,
   h2,
@@ -24,7 +24,7 @@ html.dark {
   h4,
   h5,
   h6 {
-    font-family: var(--hy-font-serif);
+    font-family: var(--va-font-family-base);
     font-weight: 900;
   }
 
@@ -33,49 +33,44 @@ html.dark {
       margin-bottom: 0;
     }
   }
-}
 
+  blockquote {
+    margin: 16px 0;
+    border-left: 4px solid var(--va-c-divider);
+    padding-left: 12px;
 
-.markdown-body :not(pre)>code {
-  padding: 3px 6px;
-  font-size: 0.85rem;
-  color: var(--hy-c-text-code);
-  background: var(--hy-c-bg-mute);
-  border-radius: 3px;
-}
+    transition: border-color 0.5s p {
+      margin: 0;
+      font-size: 16px;
+      color: var(--vp-c-text-2);
+      transition: color 0.5s;
+    }
+  }
 
-.markdown-body div[class*=language-] pre {
-  max-width: calc(100vw - 56px);
-}
+  code:not(pre > code) {
+    color: var(--va-c-text-code);
+    background-color: var(--va-c-bg-mute);
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: 500;
 
-.markdown-body div[class*=language-] {
-  width: 100%;
-}
+    &::before {
+      content: none;
+    }
 
-@media screen and (max-width: 640px) {
-  .markdown-body div[class*=language-] {
-    margin: auto;
+    &::after {
+      content: none;
+    }
+  }
+
+  div[class*=language-] pre {
+    max-width: none;
   }
 }
-
 
 .prose :where(:not(pre) > code):not(:where(.not-prose, .not-prose *))::before,
 .prose :where(:not(pre) > code):not(:where(.not-prose, .not-prose *))::after {
   content: none !important;
-}
-
-.custom-block.tip {
-  background-color: rgba(200, 200, 200, 0.1);
-  border-color: var(--hy-c-primary);
-  padding: 0.5rem 1rem;
-}
-
-.markdown-body {
-  --un-prose-borders: var(--hy-c-primary);
-}
-
-.markdown-body div[class*=language-] pre {
-  max-width: none;
 }
 
 .prose :where(blockquote):not(:where(.not-prose, .not-prose *)) {
@@ -87,4 +82,10 @@ html.dark {
   >p {
     margin: 0.5rem 0;
   }
+}
+
+.custom-block.tip {
+  background-color: rgba(200, 200, 200, 0.1);
+  border-color: var(--hy-c-primary);
+  padding: 0.5rem 1rem;
 }

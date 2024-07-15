@@ -1,5 +1,6 @@
 import type { DefaultTheme, ValaxyTheme } from 'valaxy'
 import { defineTheme, mergeValaxyConfig } from 'valaxy'
+import markdownFurigana from 'furigana-markdown-it'
 import { withImageConfig, withThemeConfig } from './node'
 import type { ThemeConfig } from './types'
 
@@ -14,6 +15,15 @@ export default defineTheme<ThemeConfig>((options) => {
       theme: 'dark',
       layout: {
         post: 'image:slice:reverse',
+      },
+    },
+    markdown: {
+      theme: {
+        dark: 'nord',
+        light: 'material-theme-lighter',
+      },
+      config(md) {
+        md.use(markdownFurigana())
       },
     },
     vite: {

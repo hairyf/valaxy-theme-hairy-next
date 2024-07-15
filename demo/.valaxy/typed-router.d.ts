@@ -52,7 +52,10 @@ declare module 'vue-router/auto-routes' {
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/posts/i18n': RouteRecordInfo<'/posts/i18n', '/posts/i18n', Record<never, never>, Record<never, never>>,
     '/posts/test': RouteRecordInfo<'/posts/test', '/posts/test', Record<never, never>, Record<never, never>>,
-    '/posts/valaxy-theme-hairy': RouteRecordInfo<'/posts/valaxy-theme-hairy', '/posts/valaxy-theme-hairy', Record<never, never>, Record<never, never>>,
+    '/posts/theme/': RouteRecordInfo<'/posts/theme/', '/posts/theme', Record<never, never>, Record<never, never>>,
+    '/posts/theme/step-1': RouteRecordInfo<'/posts/theme/step-1', '/posts/theme/step-1', Record<never, never>, Record<never, never>>,
+    '/posts/theme/step-2': RouteRecordInfo<'/posts/theme/step-2', '/posts/theme/step-2', Record<never, never>, Record<never, never>>,
+    '/posts/theme/step-3': RouteRecordInfo<'/posts/theme/step-3', '/posts/theme/step-3', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
     '/tags/[tag]/': RouteRecordInfo<'/tags/[tag]/', '/tags/:tag', { tag: ParamValue<true> }, { tag: ParamValue<false> }>,
   }

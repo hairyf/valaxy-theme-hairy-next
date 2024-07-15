@@ -1,6 +1,5 @@
 import { defineConfig } from 'valaxy'
 import type { ThemeConfig } from 'valaxy-theme-hairy'
-import { addonAlgolia } from 'valaxy-addon-algolia'
 import { addonWaline } from 'valaxy-addon-waline'
 import { addonMeting } from 'valaxy-addon-meting'
 
@@ -40,16 +39,7 @@ export default defineConfig<ThemeConfig>({
     },
   },
 
-  markdown: {
-    theme: 'material-theme-ocean',
-  },
-
   addons: [
-    addonAlgolia({
-      appId: '0B89DLR0Q9',
-      apiKey: '756e8e048364fae43536c1d0000734a6',
-      indexName: 'hairy.blog',
-    }),
     addonWaline({
       comment: true,
       serverURL: 'https://blog-waline-hairy.vercel.app',
