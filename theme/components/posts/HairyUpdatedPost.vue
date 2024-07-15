@@ -16,9 +16,9 @@ const router = useRouter()
 const post = computed(() => {
   const clone = [...props.posts].map(v => ({
     ...v,
-    date: v.updated instanceof Date
-      ? v.updated.valueOf()
-      : new Date(v.updated || Date.now()).valueOf(),
+    date: v.date instanceof Date
+      ? v.date.valueOf()
+      : new Date(v.date || Date.now()).valueOf(),
   }))
   clone.sort((b, a) => a.date - b.date)
   return clone[0]
@@ -64,7 +64,7 @@ function displayCategory(keys: string | string[] = []) {
         <div class="lt-md:hidden flex items-center gap-2">
           <div class="i-material-symbols-folder-open-rounded text-14px" />
           <ElTag size="small" class="dark:bg-dark-50 cursor-pointer border-none!" @click="displayCategory(post.categories)">
-            {{ post.categories }}
+            {{ toArray(post.categories).map($t).join('/') }}
           </ElTag>
         </div>
       </template>
