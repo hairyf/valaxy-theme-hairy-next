@@ -1,0 +1,1 @@
+import{_ as r,y as i,b as m,e as p,w as o,j as n,aR as f,aS as l,aT as u,aU as d,aV as y}from"./app-CB06-Kky.js";const H={};function v(w,x){const e=f,a=l,t=i("router-view"),_=u,c=d,s=y;return m(),p(s,null,{default:o(()=>[n(e),n(a,{title:"分类"}),n(_,null,{default:o(()=>[n(t)]),_:1}),n(c)]),_:1})}const B=r(H,[["render",v]]);export{B as default};
