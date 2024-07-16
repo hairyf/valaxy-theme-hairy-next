@@ -7,7 +7,7 @@ import 'element-plus/theme-chalk/el-timeline.css'
 import 'element-plus/theme-chalk/el-timeline-item.css'
 import 'element-plus/theme-chalk/el-tag.css'
 
-onMounted(setupDefaultDark)
+setupDefaultDark()
 </script>
 
 <template>

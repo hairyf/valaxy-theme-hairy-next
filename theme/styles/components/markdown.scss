@@ -84,8 +84,6 @@ html.dark {
   }
 }
 
-.custom-block.tip {
-  background-color: rgba(200, 200, 200, 0.1);
+.markdown-body blockquote {
   border-color: var(--hy-c-primary);
-  padding: 0.5rem 1rem;
 }

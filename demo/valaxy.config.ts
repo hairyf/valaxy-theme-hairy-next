@@ -11,6 +11,7 @@ export default defineConfig<ThemeConfig>({
   theme: 'hairy',
 
   themeConfig: {
+    theme: 'dark',
     nav: [
       {
         text: 'Home',

@@ -1,13 +1,16 @@
 import { useAppStore, useThemeConfig } from 'valaxy'
+import { onMounted } from 'vue'
 import { useLocalStorage } from '@vueuse/core'
 import type { ThemeConfig } from 'valaxy-theme-hairy'
 
 export function setupDefaultDark() {
   const theme = useThemeConfig<ThemeConfig>()
-  const { toggleDark } = useAppStore()
+  const appStore = useAppStore()
   const local = useLocalStorage('--hairy-mode', '')
-  if (theme.value.theme && !local.value) {
-    local.value = theme.value.theme
-    toggleDark()
-  }
+  onMounted(() => {
+    if (theme.value.theme && !local.value) {
+      appStore.isDark = theme.value.theme === 'dark'
+      local.value = theme.value.theme
+    }
+  })
 }
