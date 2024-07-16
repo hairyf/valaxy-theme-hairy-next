@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { onMounted } from 'vue'
 import { setupDefaultDark } from './composables'
 
 import 'element-plus/theme-chalk/base.css'
